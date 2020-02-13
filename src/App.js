@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AppExampleProps from './example-props/AppExampleProps';
+import AppExampleContext from './example-context/AppExampleContext';
+import AppExampleContextWithHoc from './example-context-with-hoc/AppExampleContextWithHoc';
+import AppExampleContextWithHooks from './example-context-with-hooks/AppExampleContextWithHooks';
+import AppExampleRedux from './example-redux/AppExampleRedux';
+import AppExampleReduxWithHooks from './example-redux-with-hooks/AppExampleReduxWithHooks';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppExampleProps />
+      <AppExampleContext />
+      <AppExampleContextWithHoc />
+      <AppExampleContextWithHooks />
+      <AppExampleRedux />
+      <AppExampleReduxWithHooks />
     </div>
   );
 }
